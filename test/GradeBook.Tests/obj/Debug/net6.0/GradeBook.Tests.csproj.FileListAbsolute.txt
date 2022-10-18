@@ -96,3 +96,4 @@
 /Users/thatguy/code/C#/gradebook/test/GradeBook.Tests/obj/Debug/net6.0/GradeBook.Tests.pdb
 /Users/thatguy/code/C#/gradebook/test/GradeBook.Tests/obj/Debug/net6.0/GradeBook.Tests.genruntimeconfig.cache
 /Users/thatguy/code/C#/gradebook/test/GradeBook.Tests/obj/Debug/net6.0/ref/GradeBook.Tests.dll
+/Users/thatguy/code/C#/gradebook/test/GradeBook.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
