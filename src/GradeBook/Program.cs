@@ -2,7 +2,7 @@
 
 var book = new Book("Ryan's Grade Book");
 book.GradeAdded += OnGradeAdded;
-book.GradeAdded -=OnGradeAdded;
+
 
 
 while(true)
