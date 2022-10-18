@@ -5,8 +5,9 @@ class Book
   {
     grades = new List<double>();
     Name = name;
+    category = "";
   }
-  public void AddLetterGrade(char letter)
+  public void AddGrade(char letter)
   {
     switch(letter)
     {
@@ -73,8 +74,15 @@ class Book
     return result;
   }
 
-  public string Name;
+
     private List<double> grades;
+
+    public string Name
+    {
+      get; 
+      private set;
+    }
+    readonly string category = "Science";
 }
 
 

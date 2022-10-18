@@ -32,6 +32,8 @@ while(true)
 
 var stats = book.ShowStatistics();
 
+
+Console.WriteLine($"For the Book Named {book.Name}");
 Console.WriteLine($"The Lowest grade is {stats.Low}");
 Console.WriteLine($"The Highest grade is {stats.High}");
 Console.WriteLine($"The Average grade is {stats.Average}");
