@@ -4,11 +4,14 @@ class Book
   public Book (string name)
   {
     grades = new List<double>();
-    this.name = name;
+    Name = name;
   }
   public void AddGrade(double grade)
   {
+    if (grade <= 100 && grade >= 0)
+    {
     grades.Add(grade);
+    }
   }
   
   public Statistics ShowStatistics()
@@ -28,7 +31,7 @@ class Book
     return result;
   }
 
-  private string name;
+  public string Name;
     private List<double> grades;
 }
 
