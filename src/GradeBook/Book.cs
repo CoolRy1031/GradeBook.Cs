@@ -1,4 +1,4 @@
-
+public delegate void GradeAddedDelegate(object sender, EventArgs args);
 class Book 
 {
   public Book (string name)
@@ -30,12 +30,17 @@ class Book
     if (grade <= 100 && grade >= 0)
     {
       grades.Add(grade);
+      if(GradeAdded != null)
+      {
+        GradeAdded(this, new EventArgs());
+      }
     }
     else 
     {
       throw new ArgumentException($"Invalid {nameof(grade)}");
     }
   }
+  public event GradeAddedDelegate GradeAdded;
   
   public Statistics ShowStatistics()
   {
@@ -80,7 +85,7 @@ class Book
     public string Name
     {
       get; 
-      private set;
+      set;
     }
     readonly string category = "Science";
 }
